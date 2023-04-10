@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="logo.ico" type="image/x-icon" />
+    <title>旅行紀錄 | Tradule</title>
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/record.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/adb820213e.js" crossorigin="anonymous"></script>
+
+<body>
+
+    <button id="topBtn" title="Go to top"><i class="fa-solid fa-chevron-up"></i></button>
+
+
+    <!----------------- Header ----------------->
+    <header>
+        <nav>
+            <a href="index.html" class="logo"></a>
+
+            <ul class="web">
+                <li><a href="explore.html">探索行程</a></li>
+                <li><a href="products.html">旅行幫手</a></li>
+                <li><a class="active" href="record.html">旅行紀錄</a></li>
+                <li><a href="set.html">建立行程</a></li>
+                <li><a href="user.html"><i class="fa-solid fa-user"></i></a></li>
+                <li><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+            </ul>
+
+            <div id="navBurger"><i class="fa-solid fa-bars"></i></div>
+
+            <ul id="mobileTop">
+                <li><a href="user.html"><i class="fa-solid fa-user"></i> 會員登入/註冊</a></li>
+                <li><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i> 購物車</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+
+    <!----------------- Search ----------------->
+
+    <section>
+        <div class="block banner">
+            <h1>想探索哪個旅遊景點的紀錄呢?</h1>
+            <input type="text"><button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+
+    </section>
+
+    <!----------------- Record ----------------->
+
+    <main>
+
+        <div class="block vlog">
+            <h2>熱門旅遊Vlog</h2>
+            <ul class="nation">
+                <li>
+                    <button class="tablinks -on" onclick="openCity(event, 'USA')">美國</button>
+                </li>
+                <li>
+                    <button class="tablinks" onclick="openCity(event, 'Canada')">加拿大</button>
+                </li>
+                <li>
+                    <button class="tablinks" onclick="openCity(event, 'Aus')">澳洲</button>
+                </li>
+                <li>
+                    <button>日本</button>
+                </li>
+                <li>
+                    <button>新加坡</button>
+                </li>
+                <li>
+                    <button>台灣</button>
+                </li>
+            </ul>
+
+            <div id="USA" class="tabcontent">
+                <ul class="record" data-aos="fade-up" data-aos-duration="1500">
+                    <li>
+                        <a href="record.html">
+                            <div class="video">
+                                <img src="vlog/usa/usaVlog1.jpg">
+                            </div>
+                            <div class="videoText">
+                                <h4 class="videoTitle">Camping Alone for the first time</h4>
+                                <p class="vedeoInfo">觀看次數：12,394 • 2022年4月14日</p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="record.html">
+                            <div class="video">
+                                <img src="vlog/usa/usaVlog2.jpg">
+                            </div>
+                            <div class="videoText">
+                                <h4 class="videoTitle">優勝美地真的太太太太美啦! 一生一定要拜訪一次😍😍😍</h4>
+                                <p class="vedeoInfo">觀看次數：23,932 • 2023年2月14日</p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="record.html">
+                            <div class="video">
+                                <img src="vlog/usa/usaVlog3.jpg">
+                            </div>
+                            <div class="videoText">
+                                <h4 class="videoTitle">跟好友的第一次Road Trip | 旅程中意外的驚喜?</h4>
+                                <p class="vedeoInfo">觀看次數：10,102 • 2022年6月10日</p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="record.html">
+                            <div class="video">
+                                <img src="vlog/usa/usaVlog4.jpg">
+                            </div>
+                            <div class="videoText">
+                                <h4 class="videoTitle">電影都會看見的中央公園🌳真的讚爆了</h4>
+                                <p class="vedeoInfo">觀看次數：19,173 • 2022年9月28日</p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="record.html">
+                            <div class="video">
+                                <img src="vlog/usa/usaVlog5.jpg">
+                            </div>
+                            <div class="videoText">
+                                <h4 class="videoTitle">A Day in Dc | 隨意晃晃的一天</h4>
+                                <p class="vedeoInfo">觀看次數：19,173 • 2022年9月28日</p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="record.html">
+                            <div class="video">
+                                <img src="vlog/usa/usaVlog6.jpg">
+                            </div>
+                            <div class="videoText">
+                                <h4 class="videoTitle">大推波士頓 | 龍蝦好好吃 | 拜訪哈佛大學</h4>
+                                <p class="vedeoInfo">觀看次數：19,173 • 2022年9月28日</p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="record.html">
+                            <div class="video">
+                                <img src="vlog/usa/usaVlog7.jpg">
+                            </div>
+                            <div class="videoText">
+                                <h4 class="videoTitle">搭纜車俯瞰整個紐約👀🥰</h4>
+                                <p class="vedeoInfo">觀看次數：19,173 • 2022年9月28日</p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="record.html">
+                            <div class="video">
+                                <img src="vlog/usa/usaVlog8.jpg">
+                            </div>
+                            <div class="videoText">
+                                <h4 class="videoTitle">加州Vlog | 好萊塢 | 椰子樹 | 比佛利山莊</h4>
+                                <p class="vedeoInfo">觀看次數：19,173 • 2022年9月28日</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div id="Canada" class="tabcontent" style="display: none;">
+                <ul class="record" data-aos="fade-up" data-aos-duration="1500">
+                    <li>
+                        <a href="record.html">
+                            <div class="video">
+                                <img src="vlog/vlog4.jpg">
+                            </div>
+                            <div class="videoText">
+                                <h4 class="videoTitle">加拿大賞楓去🍁🍁🍁，我最愛的秋天</h4>
+                                <p class="vedeoInfo">觀看次數：12,394 • 2022年4月14日</p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="record.html">
+                            <div class="video">
+                                <img src="vlog/canada/cadVlog1.jpg">
+                            </div>
+                            <div class="videoText">
+                                <h4 class="videoTitle">Canada Vlog | 秘境海邊 | 騎車環島</h4>
+                                <p class="vedeoInfo">觀看次數：23,932 • 2023年2月14日</p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="record.html">
+                            <div class="video">
+                                <img src="vlog/canada/cadVlog2.jpg">
+                            </div>
+                            <div class="videoText">
+                                <h4 class="videoTitle">A Day in 溫哥華市區</h4>
+                                <p class="vedeoInfo">觀看次數：10,102 • 2022年6月10日</p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="record.html">
+                            <div class="video">
+                                <img src="vlog/canada/cadVlog3.jpg">
+                            </div>
+                            <div class="videoText">
+                                <h4 class="videoTitle">留學Vlog | 下雪了多倫多 ☃☃☃</h4>
+                                <p class="vedeoInfo">觀看次數：19,173 • 2022年9月28日</p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="record.html">
+                            <div class="video">
+                                <img src="vlog/canada/cadVlog1.jpg">
+                            </div>
+                            <div class="videoText">
+                                <h4 class="videoTitle">Canada Vlog | 秘境海邊 | 騎車環島</h4>
+                                <p class="vedeoInfo">觀看次數：23,932 • 2023年2月14日</p>
+                            </div>
+                        </a>
+                    </li>
+
+
+                    <li>
+                        <a href="record.html">
+                            <div class="video">
+                                <img src="vlog/canada/cadVlog2.jpg">
+                            </div>
+                            <div class="videoText">
+                                <h4 class="videoTitle">A Day in 溫哥華市區</h4>
+                                <p class="vedeoInfo">觀看次數：10,102 • 2022年6月10日</p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="record.html">
+                            <div class="video">
+                                <img src="vlog/canada/cadVlog3.jpg">
+                            </div>
+                            <div class="videoText">
+                                <h4 class="videoTitle">留學Vlog | 下雪了多倫多 ☃☃☃</h4>
+                                <p class="vedeoInfo">觀看次數：19,173 • 2022年9月28日</p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="record.html">
+                            <div class="video">
+                                <img src="vlog/vlog4.jpg">
+                            </div>
+                            <div class="videoText">
+                                <h4 class="videoTitle">加拿大賞楓去🍁🍁🍁，我最愛的秋天</h4>
+                                <p class="vedeoInfo">觀看次數：12,394 • 2022年4月14日</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div id="Aus" class="tabcontent" style="display: none;">
+                <ul class="record" data-aos="fade-up" data-aos-duration="1500">
+                    <li>
+                        <a href="record.html">
+                            <div class="video">
+                                <img src="vlog/Au/auVlog1.jpg">
+                            </div>
+                            <div class="videoText">
+                                <h4 class="videoTitle">知性的一天 📙📘📗</h4>
+                                <p class="vedeoInfo">觀看次數：12,394 • 2022年4月14日</p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="record.html">
+                            <div class="video">
+                                <img src="vlog/Au/auVlog2.jpg">
+                            </div>
+                            <div class="videoText">
+                                <h4 class="videoTitle">Wandering in Melbourne</h4>
+                                <p class="vedeoInfo">觀看次數：23,932 • 2023年2月14日</p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="record.html">
+                            <div class="video">
+                                <img src="vlog/Au/auVlog3.jpg">
+                            </div>
+                            <div class="videoText">
+                                <h4 class="videoTitle">AU Vlog | 遇到野生袋鼠 | 跟袋鼠打拳擊 🦘</h4>
+                                <p class="vedeoInfo">觀看次數：10,102 • 2022年6月10日</p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="record.html">
+                            <div class="video">
+                                <img src="vlog/Au/auVlog4.jpg">
+                            </div>
+                            <div class="videoText">
+                                <h4 class="videoTitle">再次拜訪雪梨 | 見老朋友 | 雪梨夜生活🍸🍸🍸</h4>
+                                <p class="vedeoInfo">觀看次數：19,173 • 2022年9月28日</p>
+                            </div>
+                        </a>
+                    </li>
+
+                    
+                    <li>
+                        <a href="record.html">
+                            <div class="video">
+                                <img src="vlog/Au/auVlog2.jpg">
+                            </div>
+                            <div class="videoText">
+                                <h4 class="videoTitle">Wandering in Melbourne</h4>
+                                <p class="vedeoInfo">觀看次數：23,932 • 2023年2月14日</p>
+                            </div>
+                        </a>
+                    </li>
+
+
+                    <li>
+                        <a href="record.html">
+                            <div class="video">
+                                <img src="vlog/Au/auVlog4.jpg">
+                            </div>
+                            <div class="videoText">
+                                <h4 class="videoTitle">再次拜訪雪梨 | 見老朋友 | 雪梨夜生活🍸🍸🍸</h4>
+                                <p class="vedeoInfo">觀看次數：19,173 • 2022年9月28日</p>
+                            </div>
+                        </a>
+                    </li>
+
+
+                    <li>
+                        <a href="record.html">
+                            <div class="video">
+                                <img src="vlog/Au/auVlog1.jpg">
+                            </div>
+                            <div class="videoText">
+                                <h4 class="videoTitle">知性的一天 📙📘📗</h4>
+                                <p class="vedeoInfo">觀看次數：12,394 • 2022年4月14日</p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="record.html">
+                            <div class="video">
+                                <img src="vlog/Au/auVlog3.jpg">
+                            </div>
+                            <div class="videoText">
+                                <h4 class="videoTitle">AU Vlog | 遇到野生袋鼠 | 跟袋鼠打拳擊 🦘</h4>
+                                <p class="vedeoInfo">觀看次數：10,102 • 2022年6月10日</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <a href="#">查看更多</a>
+        </div>
+
+        <div class="block pic">
+            <h2>熱門旅遊攝影</h2>
+            <ul class="nation">
+                <li>
+                    <button class="tablinks -on" onclick="openCity(event, 'USA')">美國</button>
+                </li>
+                <li>
+                    <button class="tablinks" onclick="openCity(event, 'Canada')">加拿大</button>
+                </li>
+                <li>
+                    <button class="tablinks" onclick="openCity(event, 'Aus')">澳洲</button>
+                </li>
+                <li>
+                    <button>日本</button>
+                </li>
+                <li>
+                    <button>新加坡</button>
+                </li>
+                <li>
+                    <button>台灣</button>
+                </li>
+            </ul>
+
+            <div class="picContainer" data-aos="fade-up" data-aos-duration="1500">
+                <ul class="picList">
+                    <li>
+                        <div>
+                            <img src="record/pic1.jpg">
+                            <a href="record.html">
+                                <ul>
+                                    <li>
+                                        <div>
+                                            <img class="avatar" src="avatar/user10.jpg">
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <p>想當老奶奶的少女</p>
+                                    </li>
+                                </ul>
+                            </a>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div>
+                            <img src="record/pic2.jpg">
+                            <a href="record.html">
+                                <ul>
+                                    <li>
+                                        <div>
+                                            <img class="avatar" src="avatar/user1.jpg">
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <p>Taylor</p>
+                                    </li>
+                                </ul>
+                            </a>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div>
+                            <img src="record/pic3.jpg">
+                            <a href="record.html">
+                                <ul>
+                                    <li>
+                                        <div>
+                                            <img class="avatar" src="avatar/user2.JPG">
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <p>愛旅行的男子</p>
+                                    </li>
+                                </ul>
+                            </a>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div>
+                            <img src="record/pic16.jpg">
+                            <a href="record.html">
+                                <ul>
+                                    <li>
+                                        <div>
+                                            <img class="avatar" src="avatar/user3.JPG">
+                                        </div>
+                                    </li>
+                    
+                                    <li>
+                                        <p>Camping Boy</p>
+                                    </li>
+                                </ul>
+                            </a>
+                        </div>
+                    </li>
+                    
+                    <li>
+                        <div>
+                            <img src="record/pic17.jpg">
+                            <a href="record.html">
+                                <ul>
+                                    <li>
+                                        <div>
+                                            <img class="avatar" src="avatar/user4.JPG">
+                                        </div>
+                                    </li>
+                    
+                                    <li>
+                                        <p>自然就是狂</p>
+                                    </li>
+                                </ul>
+                            </a>
+                        </div>
+                    </li>
+                    
+                    <li>
+                        <div>
+                            <img src="record/pic18.jpg">
+                            <a href="record.html">
+                                <ul>
+                                    <li>
+                                        <div>
+                                            <img class="avatar" src="avatar/user5.JPG">
+                                        </div>
+                                    </li>
+                    
+                                    <li>
+                                        <p>Amy Chen</p>
+                                    </li>
+                                </ul>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+
+                <ul class="picList">
+                    <li>
+                        <div>
+                            <img src="record/pic4.jpg">
+                            <a href="record.html">
+                                <ul>
+                                    <li>
+                                        <div>
+                                            <img class="avatar" src="avatar/user3.JPG">
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <p>Camping Boy</p>
+                                    </li>
+                                </ul>
+                            </a>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div>
+                            <img src="record/pic5.jpg">
+                            <a href="record.html">
+                                <ul>
+                                    <li>
+                                        <div>
+                                            <img class="avatar" src="avatar/user4.JPG">
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <p>自然就是狂</p>
+                                    </li>
+                                </ul>
+                            </a>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div>
+                            <img src="record/pic6.jpg">
+                            <a href="record.html">
+                                <ul>
+                                    <li>
+                                        <div>
+                                            <img class="avatar" src="avatar/user5.JPG">
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <p>Amy Chen</p>
+                                    </li>
+                                </ul>
+                            </a>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div>
+                            <img src="record/pic13.jpg">
+                            <a href="record.html">
+                                <ul>
+                                    <li>
+                                        <div>
+                                            <img class="avatar" src="avatar/user6.JPG">
+                                        </div>
+                                    </li>
+                    
+                                    <li>
+                                        <p>Japan Lover</p>
+                                    </li>
+                                </ul>
+                            </a>
+                        </div>
+                    </li>
+                    
+                    <li>
+                        <div>
+                            <img src="record/pic14.jpg">
+                            <a href="record.html">
+                                <ul>
+                                    <li>
+                                        <div>
+                                            <img class="avatar" src="avatar/user7.JPG">
+                                        </div>
+                                    </li>
+                    
+                                    <li>
+                                        <p>韓國小姐姐</p>
+                                    </li>
+                                </ul>
+                            </a>
+                        </div>
+                    </li>
+                    
+                    <li>
+                        <div>
+                            <img src="record/pic15.jpg">
+                            <a href="record.html">
+                                <ul>
+                                    <li>
+                                        <div>
+                                            <img class="avatar" src="avatar/user8.JPG">
+                                        </div>
+                                    </li>
+                    
+                                    <li>
+                                        <p>Mr. Wish</p>
+                                    </li>
+                                </ul>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+
+                <ul class="picList mobileNone">
+                    <li>
+                        <div>
+                            <img src="record/pic7.jpg">
+                            <a href="record.html">
+                                <ul>
+                                    <li>
+                                        <div>
+                                            <img class="avatar" src="avatar/user6.JPG">
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <p>Japan Lover</p>
+                                    </li>
+                                </ul>
+                            </a>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div>
+                            <img src="record/pic8.jpg">
+                            <a href="record.html">
+                                <ul>
+                                    <li>
+                                        <div>
+                                            <img class="avatar" src="avatar/user7.JPG">
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <p>韓國小姐姐</p>
+                                    </li>
+                                </ul>
+                            </a>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div>
+                            <img src="record/pic9.jpg">
+                            <a href="record.html">
+                                <ul>
+                                    <li>
+                                        <div>
+                                            <img class="avatar" src="avatar/user8.JPG">
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <p>Mr. Wish</p>
+                                    </li>
+                                </ul>
+                            </a>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div>
+                            <img src="record/pic10.jpg">
+                            <a href="record.html">
+                                <ul>
+                                    <li>
+                                        <div>
+                                            <img class="avatar" src="avatar/user10.jpg">
+                                        </div>
+                                    </li>
+                    
+                                    <li>
+                                        <p>想當老奶奶的少女</p>
+                                    </li>
+                                </ul>
+                            </a>
+                        </div>
+                    </li>
+                    
+                    <li>
+                        <div>
+                            <img src="record/pic11.jpg">
+                            <a href="record.html">
+                                <ul>
+                                    <li>
+                                        <div>
+                                            <img class="avatar" src="avatar/user1.jpg">
+                                        </div>
+                                    </li>
+                    
+                                    <li>
+                                        <p>Taylor</p>
+                                    </li>
+                                </ul>
+                            </a>
+                        </div>
+                    </li>
+                    
+                    <li>
+                        <div>
+                            <img src="record/pic12.jpg">
+                            <a href="record.html">
+                                <ul>
+                                    <li>
+                                        <div>
+                                            <img class="avatar" src="avatar/user2.JPG">
+                                        </div>
+                                    </li>
+                    
+                                    <li>
+                                        <p>愛旅行的男子</p>
+                                    </li>
+                                </ul>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+
+                
+            </div>
+
+            <a href="#">查看更多</a>
+        </div>
+
+
+    </main>
+
+
+    <!----------------- Footer ----------------->
+
+    <footer>
+        <div class="footer">
+            <div>
+                <ul class="sub">
+                    <li>訂閱Tradule最新資訊</li>
+                    <li><input type="email" placeholder="請輸入email"><button>訂閱</button></li>
+                </ul>
+
+                <ul class="media">
+                    <li><a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    </li>
+                    <li><a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    </li>
+                    <li><a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
+                    <li><a href="https://line.me/zh-hant/" target="_blank"><i class="fa-brands fa-line"></i></a></li>
+                </ul>
+
+            </div>
+
+            <ul class="company">
+                <li>聯絡地址：台北市板橋區文化路一段888號</li>
+                <li>聯絡電話：02-9876-5432</li>
+                <li>統一編號：19941112</li>
+                <li>電子信箱：service@tradule.com</li>
+                <li>本網站為緯育TibaMe前端工程師班THD101學員專題作品，本平台僅供學習、展示用（<a
+                        href="https://docs.google.com/document/d/1aNzYTGHdwHYdj6LQIZgZiEQ1H_CwrjM55da8zx1fS0g/edit?usp=sharing"
+                        target="_blank">參考資料</a>）。</li>
+            </ul>
+        </div>
+    </footer>
+
+
+    <ul id="mobileBottom">
+        <li><a href="explore.html">
+                <i class="fa-solid fa-calendar-days"></i>
+                <p>探索行程</p>
+            </a></li>
+        <li><a href="products.html">
+                <i class="fa-solid fa-ticket"></i>
+                <p>旅行幫手</p>
+            </a></li>
+        <li><a href="record.html">
+                <i class="fa-solid fa-camera-retro"></i>
+                <p>旅行紀錄</p>
+            </a></li>
+        <li><a href="set.html"><i class="fa-solid fa-calendar-plus"></i>
+                <p>建立行程</p>
+            </a></li>
+    </ul>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+        integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <script src="js/all.js"></script>
+    <script src="js/record.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="logo.ico" type="image/x-icon" />
+    <title>會員登入/註冊 | Tradule</title>
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/user.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/adb820213e.js" crossorigin="anonymous"></script>
+
+<body>
+
+    <button id="topBtn" title="Go to top"><i class="fa-solid fa-chevron-up"></i></button>
+
+
+    <!----------------- Header ----------------->
+    <header>
+        <nav>
+            <a href="index.html" class="logo"></a>
+    
+            <ul class="web">
+                <li><a href="explore.html">探索行程</a></li>
+                <li><a href="products.html">旅行幫手</a></li>
+                <li><a href="record.html">旅行紀錄</a></li>
+                <li><a href="set.html">建立行程</a></li>
+                <li><a class="active" href="user.html"><i class="fa-solid fa-user"></i></a></li>
+                <li><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+            </ul>
+    
+            <div id="navBurger"><i class="fa-solid fa-bars"></i></div>
+    
+            <ul id="mobileTop">
+                <li><a href="user.html"><i class="fa-solid fa-user"></i> 會員登入/註冊</a></li>
+                <li><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i> 購物車</a></li>
+            </ul>
+    
+        </nav>
+    </header>
+
+
+    <!----------------- Login ----------------->
+
+          <main>
+            <div class="block">
+                <ul class="tab">
+                    <li><button class="tabBtn -on" >登入</button></li>
+                    <li><button class="tabBtn">註冊</button></li>
+                </ul>
+
+                <div class="login tabContent">
+                <form class="enter">
+                    <label for="loginID">帳號</label>
+                    <input type="email" placeholder="請輸入email" id="loginID" autocomplete="username">
+                    <label for="loginPW">密碼</label>
+                    <input type="password" placeholder="請輸入密碼" id="loginPW" autocomplete="current-password">
+                    <a href="#">忘記密碼</a>
+                    <button type="submit">登入</button>
+                </form>
+
+                <h4>或快速登入</h4>
+                <ul class="otherWay">
+                    <li><button><i class="fa-brands fa-facebook"></i></button></li>
+                    <li><button><i class="fa-brands fa-google"></i></button></li>
+                    <li><button><i class="fa-brands fa-line"></i></button></li>
+                </ul>
+                </div>
+
+
+                <div class="register tabContent" style="display: none;">
+                    <form class="enter">
+                        <label for="registerID">帳號</label>
+                        <input type="email" placeholder="請輸入email" id="registerID" autocomplete="username">
+                        <label for="registerPW">密碼</label>
+                        <input type="password" placeholder="請輸入密碼" id="registerPW" autocomplete="new-password">
+                        <label for="confirmPW">再次確認密碼</label>
+                        <input type="password" placeholder="請輸入密碼" id="confirmPW" autocomplete="new-password">
+                        <button type="submit">登入</button>
+                    </form>
+                
+                    <h4>或快速註冊</h4>
+                    <ul class="otherWay">
+                        <li><button><i class="fa-brands fa-facebook"></i></button></li>
+                        <li><button><i class="fa-brands fa-google"></i></button></li>
+                        <li><button><i class="fa-brands fa-line"></i></button></li>
+                    </ul>
+                </div>
+
+                
+            </div>
+          </main>
+    
+
+
+    <!----------------- Footer ----------------->
+
+    <footer>
+        <div class="footer">
+            <div>
+                <ul class="sub">
+                    <li>訂閱Tradule最新資訊</li>
+                    <li><input type="email" placeholder="請輸入email"><button>訂閱</button></li>
+                </ul>
+    
+                <ul class="media">
+                    <li><a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    </li>
+                    <li><a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    </li>
+                    <li><a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
+                    <li><a href="https://line.me/zh-hant/" target="_blank"><i class="fa-brands fa-line"></i></a></li>
+                </ul>
+    
+            </div>
+    
+            <ul class="company">
+                <li>聯絡地址：台北市板橋區文化路一段888號</li>
+                <li>聯絡電話：02-9876-5432</li>
+                <li>統一編號：19941112</li>
+                <li>電子信箱：service@tradule.com</li>
+                <li>本網站為緯育TibaMe前端工程師班THD101學員專題作品，本平台僅供學習、展示用（<a
+                        href="https://docs.google.com/document/d/1aNzYTGHdwHYdj6LQIZgZiEQ1H_CwrjM55da8zx1fS0g/edit?usp=sharing"
+                        target="_blank">參考資料</a>）。</li>
+            </ul>
+        </div>
+    </footer>
+    
+    
+    <ul id="mobileBottom">
+        <li><a href="explore.html">
+                <i class="fa-solid fa-calendar-days"></i>
+                <p>探索行程</p>
+            </a></li>
+        <li><a href="products.html">
+                <i class="fa-solid fa-ticket"></i>
+                <p>旅行幫手</p>
+            </a></li>
+        <li><a href="record.html">
+                <i class="fa-solid fa-camera-retro"></i>
+                <p>旅行紀錄</p>
+            </a></li>
+        <li><a href="set.html"><i class="fa-solid fa-calendar-plus"></i>
+                <p>建立行程</p>
+            </a></li>
+    </ul>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+        integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <script src="js/all.js"></script>
+    <script src="js/user.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

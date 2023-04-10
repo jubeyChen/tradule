@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="logo.ico" type="image/x-icon" />
+    <title>會員登入/註冊 | Tradule</title>
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/cart.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/adb820213e.js" crossorigin="anonymous"></script>
+
+<body>
+
+    <button id="topBtn" title="Go to top"><i class="fa-solid fa-chevron-up"></i></button>
+
+
+    <!----------------- Header ----------------->
+    <header>
+        <nav>
+            <a href="index.html" class="logo"></a>
+
+            <ul class="web">
+                <li><a href="explore.html">探索行程</a></li>
+                <li><a href="products.html">旅行幫手</a></li>
+                <li><a href="record.html">旅行紀錄</a></li>
+                <li><a href="set.html">建立行程</a></li>
+                <li><a href="user.html"><i class="fa-solid fa-user"></i></a></li>
+                <li><a class="active" href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+            </ul>
+
+            <div id="navBurger"><i class="fa-solid fa-bars"></i></div>
+
+            <ul id="mobileTop">
+                <li><a href="user.html"><i class="fa-solid fa-user"></i> 會員登入/註冊</a></li>
+                <li><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i> 購物車</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+
+    <!----------------- Cart ----------------->
+
+    <main>
+
+        <div class="block">
+
+            <div class="cart">
+                <h2>購物車</h2>
+                <ul class="list">
+                    <li>
+                        <div><img src="product/usa1.jpg"></div>
+                    </li>
+                    <li><a href="products.html" target="_blank">自由女神像門票</a></li>
+                    <li>
+                        <p>2023-04-28</p>
+                    </li>
+                    <li>
+                        <p>成人 ×1</p>
+                    </li>
+                    <li>
+                        <p>NTD <span class="price">1000</span></p>
+                    </li>
+                    <li><button class="delete"><i class="fa-solid fa-trash-can"></i></button></li>
+                </ul>
+
+                <ul class="list">
+                    <li>
+                        <div><img src="product/paris1.jpg"></div>
+                    </li>
+                    <li><a href="products.html" target="_blank">羅浮宮門票</a></li>
+                    <li>
+                        <p>2023-04-30</p>
+                    </li>
+                    <li>
+                        <p>成人 ×1</p>
+                    </li>
+                    <li>
+                        <p>NTD <span class="price">570</span></p>
+                    </li>
+                    <li><button class="delete"><i class="fa-solid fa-trash-can"></i></button></li>
+                </ul>
+
+                <h4>合計 NTD <span id="sum">1570</span></h4>
+            </div>
+
+            <div class="pay">
+                <h2>填寫資料與付款</h2>
+                <form>
+                    <div class="details">
+                        <h4>訂購人資料</h4>
+                        <input type="text" placeholder="請填寫全名">
+                        <input type="email" placeholder="請輸入email">
+                        <input type="text" placeholder="請輸入電話號碼">
+                    </div>
+
+                    <div class="payment">
+                        <h4>信用卡付款</h4>
+                        <input type="text" placeholder="請輸入信用卡卡號">
+                        <input type="text" placeholder="信用卡有效期限">
+                        <input type="text" placeholder="卡片後3碼">
+                    </div>
+
+                    <div class="invoice">
+                        <h4>購買憑證</h4>
+                        <label>
+                            <input type="radio" name="invoice"> 開立個人收據
+                        </label>
+
+                        <label>
+                            <input type="radio" name="invoice"> 開立統編/抬頭
+                        </label>
+                    </div>
+
+                    <a href="#">取消，繼續購物</a>
+                    <button>付款</button>
+                </form>
+            </div>
+
+        </div>
+    </main>
+
+
+
+    <!----------------- Footer ----------------->
+
+    <footer>
+        <div class="footer">
+            <div>
+                <ul class="sub">
+                    <li>訂閱Tradule最新資訊</li>
+                    <li><input type="email" placeholder="請輸入email"><button>訂閱</button></li>
+                </ul>
+
+                <ul class="media">
+                    <li><a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    </li>
+                    <li><a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    </li>
+                    <li><a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
+                    <li><a href="https://line.me/zh-hant/" target="_blank"><i class="fa-brands fa-line"></i></a></li>
+                </ul>
+
+            </div>
+
+            <ul class="company">
+                <li>聯絡地址：台北市板橋區文化路一段888號</li>
+                <li>聯絡電話：02-9876-5432</li>
+                <li>統一編號：19941112</li>
+                <li>電子信箱：service@tradule.com</li>
+                <li>本網站為緯育TibaMe前端工程師班THD101學員專題作品，本平台僅供學習、展示用（<a
+                        href="https://docs.google.com/document/d/1aNzYTGHdwHYdj6LQIZgZiEQ1H_CwrjM55da8zx1fS0g/edit?usp=sharing"
+                        target="_blank">參考資料</a>）。</li>
+            </ul>
+        </div>
+    </footer>
+
+
+    <ul id="mobileBottom">
+        <li><a href="explore.html">
+                <i class="fa-solid fa-calendar-days"></i>
+                <p>探索行程</p>
+            </a></li>
+        <li><a href="products.html">
+                <i class="fa-solid fa-ticket"></i>
+                <p>旅行幫手</p>
+            </a></li>
+        <li><a href="record.html">
+                <i class="fa-solid fa-camera-retro"></i>
+                <p>旅行紀錄</p>
+            </a></li>
+        <li><a href="set.html"><i class="fa-solid fa-calendar-plus"></i>
+                <p>建立行程</p>
+            </a></li>
+    </ul>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="js/all.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

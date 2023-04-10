@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="logo.ico" type="image/x-icon" />
+    <title>旅行幫手 | Tradule</title>
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/products.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/adb820213e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <button id="topBtn" title="Go to top"><i class="fa-solid fa-chevron-up"></i></button>
+
+
+    <!----------------- Header ----------------->
+    <header>
+        <nav>
+            <a href="index.html" class="logo"></a>
+    
+            <ul class="web">
+                <li><a href="explore.html">探索行程</a></li>
+                <li><a class="active" href="products.html">旅行幫手</a></li>
+                <li><a href="record.html">旅行紀錄</a></li>
+                <li><a href="set.html">建立行程</a></li>
+                <li><a href="user.html"><i class="fa-solid fa-user"></i></a></li>
+                <li><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+            </ul>
+    
+            <div id="navBurger"><i class="fa-solid fa-bars"></i></div>
+    
+            <ul id="mobileTop">
+                <li><a href="user.html"><i class="fa-solid fa-user"></i> 會員登入/註冊</a></li>
+                <li><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i> 購物車</a></li>
+            </ul>
+    
+        </nav>
+    </header>
+
+
+    <!----------------- Search ----------------->
+
+    <section class="search">
+        <div class="block">
+            <div class="where">
+                <h3>篩選目的地</h3>
+                <input type="text"><button><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+            <div class="category">
+                <h3>商品種類</h3>
+                <ul>
+                    <li>
+                        <label>
+                            <input type="checkbox" id="all" checked> 全部
+                        </label>
+                    </li>
+
+                    <li>
+                        <label>
+                            <input type="checkbox" id="ticket" class="option" checked> 景點門票
+                        </label>
+                    </li>
+
+                    <li>
+                        <label>
+                            <input type="checkbox" id="travel" class="option" checked> 旅遊行程
+                        </label>
+                    </li>
+
+                    <li>
+                        <label>
+                            <input type="checkbox" id="network" class="option" checked> 通訊網路
+                        </label>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!----------------- 商品 ----------------->
+
+
+    <main>
+        <div class="block product">
+            <ul data-aos="fade-up" data-aos-duration="1500">
+                <li class="all ticket">
+                    <div class="pic"><img src="product/usa1.jpg" alt=""></div>
+
+                    <div class="para">
+                        <p>美國 紐約</p>
+                        <h3>自由女神像門票</h3>
+                        <p class="review"><i class="fa-solid fa-star"></i> 4.6 (2,315則評價)</p>
+                        <div class="tag"><span>立即確認</span> <span>即買即用</span></div>
+                        <h4>NT$1,000</h4>
+                    </div>
+                </li>
+
+                <li class="all ticket">
+                    <div class="pic"><img src="product/uk1.jpg" alt=""></div>
+
+                    <div class="para">
+                        <p>英國 倫敦</p>
+                        <h3>倫敦眼摩天輪門票</h3>
+                        <p class="review"><i class="fa-solid fa-star"></i> 4.8 (1,346則評價)</p>
+                        <div class="tag"><span>立即確認</span> <span>即買即用</span></div>
+                        <h4>NT$1,380</h4>
+                    </div>
+                </li>
+
+                <li class="all ticket">
+                    <div class="pic"><img src="product/paris1.jpg" alt=""></div>
+
+                    <div class="para">
+                        <p>巴黎 羅浮宮</p>
+                        <h3>羅浮宮門票</h3>
+                        <p class="review"><i class="fa-solid fa-star"></i> 4.6 (2,315則評價)</p>
+                        <div class="tag"><span>立即確認</span> <span>即買即用</span></div>
+                        <h4>NT$570</h4>
+                    </div>
+                </li>
+
+                <li class="all ticket">
+                    <div class="pic"><img src="product/sydney1.jpg" alt=""></div>
+
+                    <div class="para">
+                        <p>澳洲 雪梨</p>
+                        <h3>雪梨歌劇院門票</h3>
+                        <p class="review"><i class="fa-solid fa-star"></i> 4.4 (1,003則評價)</p>
+                        <div class="tag"><span>立即確認</span> <span>即買即用</span></div>
+                        <h4>NT$655</h4>
+                    </div>
+                </li>
+
+                <li class="all travel">
+                    <div class="pic"><img src="product/Uluru.jpg" alt=""></div>
+
+                    <div class="para">
+                        <p>澳洲 烏魯魯</p>
+                        <h3>烏魯魯觀景體驗</h3>
+                        <p class="review"><i class="fa-solid fa-star"></i> 4.8 (2,742則評價)</p>
+                        <div class="tag"></div>
+                        <h4>NT$2,150</h4>
+                    </div>
+                </li>
+
+                <li class="all travel">
+                    <div class="pic"><img src="product/zoo.jpg" alt=""></div>
+
+                    <div class="para">
+                        <p>澳洲 布里斯本</p>
+                        <h3>龍柏無尾熊動物園</h3>
+                        <p class="review"><i class="fa-solid fa-star"></i> 4.6 (2,315則評價)</p>
+                        <div class="tag"><span>立即確認</span> <span>即買即用</span></div>
+                        <h4>NT$1,000</h4>
+                    </div>
+                </li>
+
+                <li class="all travel">
+                    <div class="pic"><img src="product/UniversalStudios.jpg" alt=""></div>
+
+                    <div class="para">
+                        <p>新加坡</p>
+                        <h3>新加坡環球影城</h3>
+                        <p class="review"><i class="fa-solid fa-star"></i> 4.7 (3,769則評價)</p>
+                        <div class="tag"><span>立即確認</span></div>
+                        <h4>NT$1,730</h4>
+                    </div>
+                </li>
+
+                <li class="all ticket">
+                    <div class="pic"><img src="product/LetsRelaxSpa.jpg" alt=""></div>
+
+                    <div class="para">
+                        <p>泰國 曼谷</p>
+                        <h3>泰國按摩票券</h3>
+                        <p class="review"><i class="fa-solid fa-star"></i> 4.5 (2,640則評價)</p>
+                        <div class="tag"></div>
+                        <h4>NT$650</h4>
+                    </div>
+                </li>
+
+                <li class="all travel">
+                    <div class="pic"><img src="product/sakura.jpg" alt=""></div>
+                
+                    <div class="para">
+                        <p>日本 大阪</p>
+                        <h3>大阪賞櫻花一日遊</h3>
+                        <p class="review"><i class="fa-solid fa-star"></i> 4.7 (2,342則評價)</p>
+                        <div class="tag"></div>
+                        <h4>NT$350</h4>
+                    </div>
+                </li>
+                
+                <li class="all network">
+                    <div class="pic"><img src="product/simcard.jpg" alt=""></div>
+                
+                    <div class="para">
+                        <p>新加坡</p>
+                        <h3>新加坡7天網路sim卡</h3>
+                        <p class="review"><i class="fa-solid fa-star"></i> 4.8 (1,395則評價)</p>
+                        <div class="tag"><span>立即確認</span> <span>即買即用</span></div>
+                        <h4>NT$1,000</h4>
+                    </div>
+                </li>
+                
+                <li class="all travel">
+                    <div class="pic"><img src="product/GrandCanyon.jpg" alt=""></div>
+                
+                    <div class="para">
+                        <p>美國 亞利桑那州</p>
+                        <h3>大峽谷西緣一日遊</h3>
+                        <p class="review"><i class="fa-solid fa-star"></i> 4.7 (3,769則評價)</p>
+                        <div class="tag"><span>立即確認</span></div>
+                        <h4>NT$3,530</h4>
+                    </div>
+                </li>
+                
+                <li class="all ticket">
+                    <div class="pic"><img src="product/bus.jpg" alt=""></div>
+                
+                    <div class="para">
+                        <p>美國 紐約</p>
+                        <h3>紐約觀光巴士</h3>
+                        <p class="review"><i class="fa-solid fa-star"></i> 4.5 (2,640則評價)</p>
+                        <div class="tag"><span>立即確認</span></div>
+                        <h4>NT$250</h4>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+    </main>
+
+
+    <!----------------- Footer ----------------->
+
+    <footer>
+        <div class="footer">
+            <div>
+                <ul class="sub">
+                    <li>訂閱Tradule最新資訊</li>
+                    <li><input type="email" placeholder="請輸入email"><button>訂閱</button></li>
+                </ul>
+    
+                <ul class="media">
+                    <li><a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    </li>
+                    <li><a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    </li>
+                    <li><a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
+                    <li><a href="https://line.me/zh-hant/" target="_blank"><i class="fa-brands fa-line"></i></a></li>
+                </ul>
+    
+            </div>
+    
+            <ul class="company">
+                <li>聯絡地址：台北市板橋區文化路一段888號</li>
+                <li>聯絡電話：02-9876-5432</li>
+                <li>統一編號：19941112</li>
+                <li>電子信箱：service@tradule.com</li>
+                <li>本網站為緯育TibaMe前端工程師班THD101學員專題作品，本平台僅供學習、展示用（<a
+                        href="https://docs.google.com/document/d/1aNzYTGHdwHYdj6LQIZgZiEQ1H_CwrjM55da8zx1fS0g/edit?usp=sharing"
+                        target="_blank">參考資料</a>）。</li>
+            </ul>
+        </div>
+    </footer>
+    
+    
+    <ul id="mobileBottom">
+        <li><a href="explore.html">
+                <i class="fa-solid fa-calendar-days"></i>
+                <p>探索行程</p>
+            </a></li>
+        <li><a href="products.html">
+                <i class="fa-solid fa-ticket"></i>
+                <p>旅行幫手</p>
+            </a></li>
+        <li><a href="record.html">
+                <i class="fa-solid fa-camera-retro"></i>
+                <p>旅行紀錄</p>
+            </a></li>
+        <li><a href="set.html"><i class="fa-solid fa-calendar-plus"></i>
+                <p>建立行程</p>
+            </a></li>
+    </ul>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="js/all.js"></script>
+    <script src="js/products.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

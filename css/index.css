@@ -1,0 +1,619 @@
+.banner {
+    position: relative;
+}
+
+.banner div {
+    height: 900px;
+}
+
+.ban1 {
+    background-image: url('../banner/banner1.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.ban2 {
+    background-image: url('../banner/banner2.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.ban3 {
+    background-image: url('../banner/banner3.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.banner h1 {
+    color: #FFF;
+    font-weight: bold;
+    text-shadow: 2px 2px 2px #333;
+    position: absolute;
+    top: 50%;
+    left: 25%;
+}
+
+ul.info {
+    background-color: rgba(255, 255, 255, 0.5);
+    height: 150px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+ul.info li {
+    text-align: center;
+    color: #0081A7;
+    text-shadow: 2px 2px 2px #FFF;
+}
+
+ul.info li p {
+    font-size: 1.3vw;
+    font-weight: bold;
+}
+
+
+/* ========================行程分享========================== */
+
+.schedule h3,
+.product-content h3,
+.record h3 {
+    text-align: center;
+    font-weight: bold;
+    margin: 0 0 80px;
+}
+
+.schedule h3::before,
+.schedule h3::after,
+.product-content h3::before,
+.product-content h3::after,
+.record h3::before,
+.record h3::after {
+    content: "";
+    display: inline-block;
+    width: 40%;
+    height: 3px;
+    background-color: #00AFB9;
+    vertical-align: middle;
+    margin-right: 5%;
+}
+
+.schedule h3::after,
+.product-content h3::after,
+.record h3::after {
+    margin-right: 0;
+    margin-left: 5%;
+}
+
+.schedule ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.schedule ul li {
+    flex-grow: 1;
+}
+
+.schedule ul li:first-child {
+    text-align: center;
+    animation: shake 4s linear infinite;
+}
+
+.schedule ul li:last-child {
+    font-size: 1vw;
+}
+
+.schedule ul li img {
+    width: 50%;
+}
+
+@keyframes shake {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(20deg);
+    }
+
+    50% {
+        transform: rotate(0deg);
+    }
+
+    75% {
+        transform: rotate(-20deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes bounce {
+    0% {
+        transform: translate(0, 0);
+        background-color: #00AFB9;
+    }
+
+    30% {
+        transform: translate(0, 20%);
+        background-color: #0081A7;
+    }
+
+    60% {
+        transform: translate(0, -20%);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+.schedule a {
+    animation: bounce 1.5s linear infinite;
+}
+
+.schedule a,
+.product-content a,
+.record>a {
+    margin-left: auto;
+    width: 150px;
+    border-radius: 5px;
+    background-color: #00AFB9;
+    color: white;
+    font-weight: bold;
+}
+
+.schedule a:hover,
+.product-content a:hover,
+.record>a:hover {
+    background-color: #0081A7;
+    animation: none;
+}
+
+
+
+/* ========================旅遊幫手========================== */
+
+.product {
+    background-color: rgba(253, 252, 220, 0.6);
+}
+
+/* h3 和 before after的線跟行程放一起 */
+
+.product-content p,
+.record p {
+    font-size: 1.1vw;
+    text-align: center;
+}
+
+.pro-list {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 50px 0;
+}
+
+.pro-list ul {
+    background-color: #FFF;
+    padding: 20px 10px;
+    flex-basis: 23%;
+    border-radius: 5px;
+    transition: all 0.3s;
+    outline: 1px solid #ccc;
+}
+
+.pro-list ul:hover {
+    box-shadow: 2px 3px 8px #7a7a7a;
+    transform: translate(-5%, -5%);
+}
+
+.pro-list ul li {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto 10px;
+    cursor: pointer;
+}
+
+.pro-list ul li h4 {
+    margin: 0 auto 15px;
+    position: relative;
+}
+
+.pro-list ul li h4:after {
+    content: "";
+    display: block;
+    width: 220%;
+    height: 1px;
+    background-color: #999;
+    position: absolute;
+    bottom: -15%;
+    left: -60%;
+}
+
+.pro-list ul li div {
+    flex-basis: 80px;
+    flex-grow: 0;
+    height: 80px;
+    overflow: hidden;
+    margin-right: 5%;
+    border-radius: 5px;
+
+}
+
+.pro-list ul li div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.pro-list ul li p {
+    flex-grow: 1;
+    font-size: 0.8vw;
+    text-align: left;
+}
+
+.pro-list ul li p:hover {
+    text-decoration: underline;
+}
+
+.product-content a,
+.record>a {
+    margin: 0 auto;
+}
+
+
+/* ========================旅行紀錄========================== */
+
+.record ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0;
+    flex-wrap: wrap;
+}
+
+.record ul li {
+    flex-basis: 23%;
+    margin-bottom: 5%;
+}
+
+.video {
+    width: 100%;
+    height: 220px;
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.video::before {
+    content: '\f144';
+    font-family: "Font Awesome 5 free";
+    color: #fff;
+    font-size: 3vw;
+    line-height: 1;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.video img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.videoText {
+    padding: 5px;
+}
+
+.videoTitle {
+    font-size: 1vw;
+    color: #333;
+    font-weight: bold;
+    line-height: 1.3;
+    text-align: left;
+    word-wrap: break-word;
+    height: 50px;
+    overflow: hidden;
+}
+
+.videoText .vedeoInfo {
+    font-size: 0.5vw;
+    line-height: 1;
+    text-align: left;
+    color: #999;
+    margin-top: 3%;
+}
+
+
+
+
+
+/* ====================Picture====================== */
+
+.pic {
+    margin: 100px 0 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 10px 10px;
+}
+
+.pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+    transition: all 0.3s;
+}
+
+.pic div {
+    overflow: hidden;
+}
+
+.pic div:hover img {
+    opacity: 1;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.p1 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.p2 {
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.p3 {
+    grid-column: 3/5;
+    grid-row: 1/4;
+}
+
+.p4 {
+    grid-column: 1/3;
+    grid-row: 2/3;
+}
+
+
+/* ===================RWD===================== */
+
+
+@media screen and (max-width: 429px) {
+    .banner div {
+        height: 320px;
+    }
+
+    .banner h1 {
+        top: 40%;
+        left: 5%;
+        font-size: 1.8rem;
+        text-align: center;
+        width: 90%;
+    }
+
+    ul.info {
+        width: 100%;
+        height: 90px;
+    }
+
+    ul.info li h2 {
+        font-size: 1.5rem;
+    }
+
+    ul.info li p {
+        font-size: 1.2rem;
+    }
+
+    /*=====================行程分享======================*/
+    .block {
+        width: auto;
+        padding: 50px 0;
+    }
+
+    .schedule h3,
+    .product-content h3,
+    .record h3 {
+        text-align: center;
+        font-weight: bold;
+        margin: 0 0 50px;
+        font-size: 2rem;
+    }
+
+    .schedule h3::before,
+    .schedule h3::after,
+    .product-content h3::before,
+    .product-content h3::after,
+    .record h3::before,
+    .record h3::after {
+        content: "";
+        display: inline-block;
+        width: 25%;
+        height: 3px;
+        background-color: #00AFB9;
+        vertical-align: middle;
+        margin-right: 5%;
+    }
+
+    .schedule h3::after,
+    .product-content h3::after,
+    .record h3::after {
+        margin-right: 0;
+        margin-left: 5%;
+    }
+
+    .schedule ul {
+        flex-direction: column;
+    }
+
+    .schedule ul li {
+        width: 70%;
+    }
+
+    .schedule ul li:last-child {
+        font-size: 1.6rem;
+        width: 90%;
+        text-align: justify;
+        margin: 30px 0 20px;
+    }
+
+    .schedule ul li img {
+        width: 100%;
+    }
+
+    .schedule a,
+    .product-content a,
+    .record>a {
+        width: 150px;
+        margin: 0 auto;
+    }
+
+    .schedule a:hover,
+    .product-content a:hover,
+    .record>a:hover {
+        background-color: #0081A7;
+        animation: none;
+    }
+
+    /* ====================旅遊幫手====================== */
+
+    .product-content p,
+    .record p {
+        font-size: 1.6rem;
+        width: 80%;
+        margin: 0 auto;
+        text-align: justify;
+    }
+
+    .pro-list {
+        flex-direction: column;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .pro-list ul {
+        margin-bottom: 20px;
+    }
+
+    .pro-list ul:hover {
+        transform: none;
+    }
+
+    .pro-list ul li {
+        width: 90%;
+    }
+
+    .pro-list ul li h4 {
+        font-size: 1.6rem;
+    }
+
+    .pro-list ul li div {
+        flex-basis: 70%;
+    }
+
+    .pro-list ul li p {
+        font-size: 1.5rem;
+    }
+
+    /* ====================旅行紀錄====================== */
+
+    .record ul {
+        width: 90%;
+        margin: 0 auto;
+        flex-direction: column;
+    }
+
+    .record ul li a {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .video {
+        flex-basis: 50%;
+        height: 100px;
+        margin-right: 3%;
+    }
+
+    .video::before {
+        font-size: 3rem;
+    }
+
+    .videoText {
+        padding: 0;
+        flex-basis: 20%;
+        flex-grow: 1;
+    }
+
+    .videoTitle {
+        font-size: 1.5rem;
+        height: 60px;
+        width: 100%;
+    }
+
+    .videoText .vedeoInfo {
+        font-size: 0.8rem;
+        margin: 1% 0 0;
+        text-align: justify;
+        line-height: 1.5;
+        width: 100%;
+    }
+
+    /* =================Picture=================== */
+
+    .pic {
+        width: 90%;
+        margin: 100px auto 50px;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 5px 5px;
+    }
+
+    .p1 {
+        grid-column: 1/3;
+        grid-row: 1/2;
+    }
+
+    .p2 {
+        grid-column: 3/6;
+        grid-row: 1/2;
+    }
+
+    .p3 {
+        grid-column: 4/6;
+        grid-row: 2/3;
+    }
+
+    .p4 {
+        grid-column: 1/4;
+        grid-row: 2/3;
+    }
+
+    .p5 {
+        display: none;
+    }
+
+    .p6 {
+        grid-column: 1/6;
+        grid-row: 3/4;
+    }
+
+
+}

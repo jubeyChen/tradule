@@ -1,0 +1,349 @@
+@import url('reset.css');
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-size: 1.5rem;
+    box-sizing: border-box;
+    letter-spacing: 3px;
+    line-height: 1.6;
+    color: #333;
+    font-family: Verdana, sans-serif, '微軟正黑體';
+}
+
+.block {
+    width: 70%;
+    margin: 0 auto;
+    padding: 100px 0;
+    box-sizing: border-box;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+    line-height: 3;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2vw;
+}
+
+h2 {
+    font-size: 1.5vw;
+}
+
+h3 {
+    font-size: 1.3vw;
+}
+
+h4 {
+    font-size: 1.1vw;
+}
+
+
+/* ====================Header====================== */
+
+header {
+    background-color: white;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+}
+
+nav {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    height: 80px;
+    padding: 5px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#navBurger {
+    display: none;
+}
+
+.logo {
+    display: inline-block;
+    width: 120px;
+    height: 80px;
+    background-image: url('../logo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+nav ul.web {
+    display: flex;
+    width: 50%;
+}
+
+
+.web li {
+    flex-basis: 0;
+    flex-grow: 1;
+}
+
+.web li:nth-child(5),
+.web li:last-child {
+    flex-basis: 7%;
+    flex-grow: 0;
+}
+
+.web li a {
+    font-size: 1vw;
+    line-height: 2.5;
+    color: #0081A7;
+    font-weight: bold;
+}
+
+.web li a:hover,
+.active {
+    color: #00AFB9;
+    text-shadow: 2px 2px 4px #FED9B7;
+}
+
+ul#mobileTop,
+ul#mobileBottom {
+    display: none;
+}
+
+/* ====================Footer====================== */
+
+footer {
+    background-color: rgba(0, 175, 185, 0.6);
+    padding: 10px 0;
+}
+
+.footer {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sub li {
+    margin-bottom: 10px;
+}
+
+.sub li input {
+    border: 0;
+    line-height: 2;
+    border-radius: 5px 0 0 5px;
+    padding: 5px;
+    outline: 2px solid transparent;
+}
+
+.sub li input:focus,
+.sub li input:focus~button {
+    outline: 2px solid #0081A7;
+}
+
+.sub li button {
+    border: 0;
+    line-height: 2;
+    padding: 5px;
+    background-color: #0081A7;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;
+    outline: 2px solid transparent;
+    color: white;
+}
+
+.sub li button:hover {
+    font-weight: bold;
+}
+
+.media {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.media li a {
+    font-size: 2.5rem;
+    color: white;
+    line-height: 1;
+}
+
+.media li a:hover {
+    color: #0081A7;
+}
+
+.company li a {
+    display: inline;
+    color: #0081A7;
+    text-decoration: underline;
+    line-height: 1;
+}
+
+/* ========= TOP BTN========== */
+
+#topBtn {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    /* Make sure it does not overlap */
+    border: 0;
+    background-color: rgba(0, 129, 167, 0.8);
+    color: #FFF;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    font-size: 2rem;
+
+}
+
+#topBtn:hover {
+    background-color: rgba(0, 175, 185, 0.9);
+}
+
+
+
+@media screen and (max-width: 429px) {
+    .block{
+        width: 95%;
+        padding: 100px 0 50px;
+    }
+    nav {
+        width: auto;
+        height: 45px;
+        position: relative;
+    }
+
+    .logo {
+        width: 50px;
+    }
+
+    #navBurger {
+        display: block;
+        margin-right: 3%;
+        font-size: 2.2rem;
+        color: #00AFB9;
+    }
+
+    nav ul.web {
+        display: none;
+    }
+
+
+    ul#mobileTop {
+        background-color: rgba(255, 255, 255, 0.9);
+        display: none;
+        width: 100%;
+
+        position: absolute;
+        top: 56px;
+        left: 0;
+    }
+
+    ul#mobileTop li {
+        padding: 10px 0;
+        border-bottom: 1px solid #ccc;
+    }
+
+    ul#mobileTop a {
+        color: #00AFB9;
+        text-align: left;
+        margin-left: 5%;
+    }
+
+    ul#mobileTop a i {
+        width: 20px;
+    }
+
+    ul#mobileBottom {
+        box-sizing: border-box;
+        width: 100%;
+        display: flex;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        background-color: #FFF;
+        justify-content: space-between;
+        padding: 5px;
+        border-top: 1px solid #ccc;
+        z-index: 90;
+    }
+
+    ul#mobileBottom li {
+        flex-basis: 0;
+        flex-grow: 1;
+    }
+
+    ul#mobileBottom a {
+        color: #0081A7;
+        font-weight: bold;
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    ul#mobileBottom a i {
+        font-size: 2rem;
+    }
+
+    ul#mobileBottom a p {
+        line-height: 1;
+    }
+
+    /* ========= Footer========== */
+    .footer {
+        width: 90%;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 0 62px;
+    }
+
+    .footer div {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .sub {
+        width: 100%;
+    }
+
+    .sub li input {
+        width: 70%;
+    }
+
+    .media {
+        justify-content:flex-start;
+    }
+
+        .media li{
+            margin-right: 12%;
+        }
+
+    .company li {
+        font-size: 1rem;
+    }
+
+    /* ========= TOP BTN========== */
+
+    #topBtn {
+        bottom: 10%;
+        right: 3%;
+        width: 35px;
+        height: 35px;
+    }
+
+}
