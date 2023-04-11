@@ -35,7 +35,7 @@ section {
 .text {
     position: absolute;
     bottom: 40%;
-    left: 38%;
+    left: 35%;
     font-size: 2vw;
     background-color: transparent;
     border: 0;
@@ -43,7 +43,12 @@ section {
     color: white;
     font-weight: bold;
     text-shadow: 2px 2px 2px #333;
+    text-align: center;
+}
 
+.text::placeholder{
+    color: white;
+    text-shadow: 2px 2px 2px #333;
 }
 
 
@@ -193,7 +198,6 @@ section {
         left: 14%;
         font-size: 2rem;
         width: 70%;
-        text-align: center;
     }
 
     .upload {
